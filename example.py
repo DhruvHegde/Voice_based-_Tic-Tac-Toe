@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speech_recognition 
 
 def get_player_input():
     recognizer = sr.Recognizer()
