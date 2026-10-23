@@ -151,3 +151,5 @@ for row in range(3):
 switch_player()
 
 window.mainloop()
+
+# ORC incremental sync smoke test
