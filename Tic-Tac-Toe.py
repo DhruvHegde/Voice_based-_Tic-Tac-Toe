@@ -2,6 +2,14 @@ from tkinter import *
 import random
 import speech_recognition as sr
 
+def new_game():
+    global player
+    player = random.choice(players)
+    label.config(text=player + " turn", fg="light blue")
+    for row in range(3):
+        for column in range(3):
+            buttons[row][column].config(text="", bg="#333333", fg="light blue")
+
 
 def style_button(button):
     button["font"] = ('consolas', 20)
