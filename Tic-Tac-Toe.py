@@ -1,6 +1,6 @@
-from tkinter import *
-import random
-import speech_recognition as sr
+# from tkinter import *
+# import random
+# import speech_recognition as sr
 
 # def new_game():
 #     global player
