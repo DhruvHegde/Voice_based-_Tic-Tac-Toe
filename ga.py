@@ -98,8 +98,8 @@ def switch_player():
     player = players[1] if player == players[0] else players[0]
     label.config(text=(player + " turn"))
 
-def display_winner_message():
-    label.config(text=(player + " wins"))
+# def display_winner_message():
+#     label.config(text=(player + " wins"))
 
 def display_tie_message():
     label.config(text="Tie!")
