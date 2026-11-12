@@ -101,31 +101,31 @@ def switch_player():
 def display_winner_message():
     label.config(text=(player + " wins"))
 
-def display_tie_message():
-    label.config(text="Tie!")
+# def display_tie_message():
+#     label.config(text="Tie!")
 
-window = Tk()
-window.title("Tic-Tac-Toe")
-players = ["X", "O"]
-player = random.choice(players)
-buttons = [[0, 0, 0],
-           [0, 0, 0],
-           [0, 0, 0]]
+# window = Tk()
+# window.title("Tic-Tac-Toe")
+# players = ["X", "O"]
+# player = random.choice(players)
+# buttons = [[0, 0, 0],
+#            [0, 0, 0],
+#            [0, 0, 0]]
 
-label = Label(text=player + " turn", font=('consolas', 40))
-label.pack(side="top")
+# label = Label(text=player + " turn", font=('consolas', 40))
+# label.pack(side="top")
 
-reset_button = Button(text="restart", font=('consolas', 20), command=new_game)
-reset_button.pack(side="top")
+# reset_button = Button(text="restart", font=('consolas', 20), command=new_game)
+# reset_button.pack(side="top")
 
-frame = Frame(window)
-frame.pack()
+# frame = Frame(window)
+# frame.pack()
 
-for row in range(3):
-    for column in range(3):
-        button = Button(frame, text="", width=5, height=2,
-                        command=lambda r=row, c=column: next_turn(r, c), font=('consolas', 20))
-        button.grid(row=row, column=column)
-        buttons[row][column] = button
+# for row in range(3):
+#     for column in range(3):
+#         button = Button(frame, text="", width=5, height=2,
+#                         command=lambda r=row, c=column: next_turn(r, c), font=('consolas', 20))
+#         button.grid(row=row, column=column)
+#         buttons[row][column] = button
 
 window.mainloop()
